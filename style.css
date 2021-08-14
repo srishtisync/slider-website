@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  overflow-x: hidden;
+}
+.img-comp-container{
+  position: relative;
+  height: 100vh;
+  //width: 100vw;
+  overflow: hidden;
+}
+.img-comp-img{
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img img{
+  height:100vh;
+  width:100vw;
+  display: block;
+  vertical-align: middle;
+}
+.img-comp-slider{
+  position: absolute;
+  z-index:9;
+  width:10vh;
+  height: 10vh;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: ew-resize;
+  overflow: hidden;
+
+}
+
+.text{
+  background-color: rgba(0,0,0,0.7);
+  color:white;
+  font-size:5vw;
+  padding: 1vh 1vh 0 1vh;
+  position: absolute;
+  top:28vh;
+  left:50%;
+  z-index:25;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: multiply;
+  width:33vw;
+
+}
+.text::after{
+  content:'Deep Dive Into NATURE With Us';
+  position: absolute;
+  top:110%;
+  color:rgba(0,0,0,0.7);
+  font-size:2vw;
+  width:33vw;
+  left:0;
+  text-align: right;
+}
+.header{
+  position: absolute;
+  top: 0 ;
+  left:0;
+  width:100%;
+  padding: 30px 100px;
+  z-index:15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  color:rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 5vh;
+}
+ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style-type: none;
+  margin-left: 4vw;
+}
+ul li a{
+  text-decoration: none;
+  color:white;
+  padding:6px 15px;
+  border-radius:10%;
+  font-size: 3vh;
+}
+ul li a:hover, .active{
+  background-color: rgba(0,0,0,0.7);
+}
+
+#cloud1{
+  position: absolute;
+  top:15vh;
+  left:0.7vw;
+
+}
+#cloud3{
+  position: absolute;
+  top:0vh;
+  left:22.4vw;
+}
+#cloud2{
+  position: absolute;
+  top:15vh;
+left:56vw;
+
+}
+#cloud4{
+  position: absolute;
+  top:2vh;
+  left: 80vw;
+}
+
+
+/*
+
+
+header ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 10px;
+  font-size: 3vh
+}
+header ul li a:hover, .active{
+  background-color:#f7b733 ;
+} */
